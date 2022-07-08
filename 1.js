@@ -24,15 +24,48 @@ function c1(){
 	}
 }*/
 
-function f1(){
+/*function f1(){
 	console.log("hi");
-	var tables= 'Table is ';
+	
 	var a=0;
 	var b =document.getElementById('t1').value;
 	var c=document.getElementById('t2').value;
-	
+	var str='<table class="table table-dark">'
 	for( a=1 ;a<=c; a++){
-	tables= tables + '<br>' + a + ' '+ 'X ' + b + ' '+ ' ='+  (a* b) ;
+	str= str + '<br>' + a + '   '+ '  X  ' + b + ' '+ ' ='+  (a* b) ;
 }
-	document.getElementById('id1').innerHTML= tables;
+		str=str +'</table>';
+	document.getElementById('id1').innerHTML= str;
+	
+}
+*/
+/*
+function f1(){
+	console.log("hi buddy")
+	var num1=document.getElementById('t1').value;
+	console.log(num1);
+	var num2=document.getElementById('t2').value;
+	console.log(num2);
+	var str='<table class="table table-dark">'
+for(i=parseInt(num1); i<=parseInt(num2) ; i++){
+str= str + '<tr> <td> '+ (i*1)+'</td>  <td> '+ (i*2)+'</td> <td> '+
+(i*3)+' </td></tr>';
+}
+str=str +'</table>';
+console.log(str);
+document.getElementById('id1').innerHTML= str;
+}
+*/
+function f1(){
+    var a = 0;
+    var b = document.getElementById('t1').value;
+    var c = document.getElementById('t2').value;
+    var t= '<table class="table table-dark"><tbody>';
+//////// for loop operation perform//////
+    for(a=1; a<=c; a++){ 
+
+    t= t +'<tr><td>' + a + ' </td><td>' + ' x ' + '</td><td>'+  b +' </td><td>' + '=' + '</td><td> ' +( a * b) + '</td></tr>';        
+    }
+    t = t + '</tbody></table>';
+    document.getElementById('id1').innerHTML='value is '+ t;    
 }
