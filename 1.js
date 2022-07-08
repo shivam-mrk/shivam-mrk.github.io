@@ -27,11 +27,12 @@ function c1(){
 function f1(){
 	console.log("hi");
 	var tables= 'Table is ';
-	var a =document.getElementById('t1').value;
-	var b=document.getElementById('t2').value;
-	var tables='<table class="table table-dark">'
-	for( a=1 ;a<=b ; a++){
-	tables= tables + '<br>' + a + ' '+ 'X ' + b + ' '+ ' ='+ (a*b) ;
+	var a=0;
+	var b =document.getElementById('t1').value;
+	var c=document.getElementById('t2').value;
+	
+	for( a=1 ;a<=c; a++){
+	tables= tables + '<br>' + a + ' '+ 'X ' + b + ' '+ ' ='+  (a* b) ;
 }
 	document.getElementById('id1').innerHTML= tables;
 }
