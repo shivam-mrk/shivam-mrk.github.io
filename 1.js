@@ -67,5 +67,5 @@ function f1(){
     t= t +'<tr><td>' + a + ' </td><td>' + ' x ' + '</td><td>'+  b +' </td><td>' + '=' + '</td><td> ' +( a * b) + '</td></tr>';        
     }
     t = t + '</tbody></table>';
-    document.getElementById('id1').innerHTML='value is '+ t;    
+    document.getElementById('id1').innerHTML='Table '+ t;    
 }
