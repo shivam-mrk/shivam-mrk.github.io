@@ -54,8 +54,8 @@ function f3(){
 		if(alter=="Mango"){
 			val=4;
 		}
-		if(alter=="Grapes"){
-			val=0;
+	if(alter=="Blueberry"){
+		val=1;
 		}
 		document.getElementById('t1').value=v3[val]; 
 }
