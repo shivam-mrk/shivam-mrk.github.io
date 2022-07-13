@@ -49,7 +49,7 @@ function f3(){
 			val=2;
 		}
 		if(alter=="Banana"){
-			val=4;
+			val=3;
 		}
 		if(alter=="Mango"){
 			val=4;
